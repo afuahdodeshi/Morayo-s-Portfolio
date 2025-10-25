@@ -1,0 +1,369 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+  padding-top: 10rem;
+}
+.nav{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 8.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li{
+    cursor: pointer;   
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-family: "bulletin-typewriter-mn", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#coverimg{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bckgimg{
+    color: black;
+}
+
+
+/* --- Projects Section --- */
+
+.content{
+    margin-top: 5rem;
+}
+h2{
+font-family: "bulletin-typewriter-mn", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 4rem 8%;
+  justify-items: center;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+.project-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.project-img:hover img {
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  text-align: center;
+  padding: 1rem;
+}
+
+.project-img:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay p {
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* about */
+.about-preview h2{
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.about-preview {
+  padding: 6rem 10%;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  gap: 10rem; /* reduced slightly from 20rem for balance */
+}
+
+/* keeps the two elements aligned and spaced */
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15rem; /* controls space between image and text */
+  flex-wrap: wrap;
+}
+
+/* profile image style */
+.about-photo {
+  width: 250px;
+  height: 310px;
+  object-fit: cover;
+}
+
+/* boxy text container */
+.about-text {
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify; /* <-- this is what makes the text look "boxy" */
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.about-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-left: 12rem;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 0.7rem 1.4rem;
+  text-decoration: none;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  border: 1.5px solid rgb(0, 0, 0);
+  transition: all 0.4s ease-in-out;
+}
+
+.about-btn:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* soft glow effect */
+}
+
+
+
+/* about page */
+.about-page {
+  padding: 8rem 10%;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+}
+
+.about-page h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.about-page-container {
+  display: flex;
+  gap: 8rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about-photo-page {
+  width: 300px;
+  height: 360px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about-text-page {
+  max-width: 600px;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* about page */
+
+/* project page */
+.project-section {
+  height: 40vh; 
+  background-color: #000;
+  position: relative;
+  display: flex;
+  align-items: center; /* vertically centers the overlay */
+  justify-content: center; /* horizontally centers the overlay */
+  margin-top: 3rem; /* keeps spacing between sections */
+  /* REMOVE padding-top */
+  box-sizing: border-box;
+}
+
+
+
+.project-section-overlay {
+  background: rgba(0,0,0,0.5); 
+  color: #fff;
+  text-align: center;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  width: 80%;
+  max-width: 700px;
+  transition: background 0.3s ease;
+}
+
+.project-section-overlay h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.project-section-overlay p {
+  font-size: 1.2rem;
+}
+
+.project-section:hover .project-section-overlay {
+  background: rgba(0,0,0,0.7);
+}
+
+/* project page */
+
+/* contact page */
+.contact-page {
+  padding: 3rem 5%; /* slightly reduced so border isn’t too cramped */
+  text-align: center;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  border: 2px solid black; 
+  box-sizing: border-box; 
+  max-width: 700px; 
+  margin: 4rem auto; 
+}
+
+
+.contact-page h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 1rem;
+  border: 1.5px solid #000;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+  color: #000;
+}
+
+#contact-form button {
+  padding: 1rem;
+  border: 1.5px solid #000;
+  background: #000;
+  color: #fff;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#contact-form button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.form-message {
+  background: #000;       /* black box */
+  color: #fff;            /* white text */
+  padding: 0.5rem 1rem;   /* small padding */
+  border: 1px solid #fff; /* subtle white border */
+  border-radius: 0;       /* keep it square, fits your style */
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+
+/* contact page */
+
+/* --- Footer --- */
+.footer {
+  background-color: #000; /* black background */
+  color: #fff; /* white text */
+  padding: 3rem 10%;
+  text-align: center;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  margin-top: 3rem;
+}
+
+.footer-content p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #999; /* subtle hover effect */
+}

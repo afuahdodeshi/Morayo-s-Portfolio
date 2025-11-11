@@ -3,19 +3,51 @@
     padding: 0%;
 }
 body{
-  padding-top: 10rem;
+  /* padding-top: 10rem;
+  padding-bottom: 100px; */
 }
-.nav{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    height: 8.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
+.nav {
+  width: 100%;
+  background-color: #fff; /* change if you want transparent or colored nav */
+  padding: 10px 20px;
+  position: fixed; /* keeps it on top */
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+nav {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 25.9rem;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 8rem;
+  margin: 0;
+  float: none;
+  display: block;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: "your font", sans-serif; /* you can use your Typekit font here */
+  font-size: 1.5rem;
+  color: #000; /* change color */
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #777;
 }
 .nav ul{
     list-style: none;
@@ -43,6 +75,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10rem;
 }
 
 #bckgimg{
@@ -330,27 +363,56 @@ font-family: "bulletin-typewriter-mn", sans-serif;
 
 /* contact page */
 .contact-page {
+    position: relative;
+  max-width: 700px;
   padding: 3rem 5%; /* slightly reduced so border isn’t too cramped */
   text-align: center;
   font-family: "bulletin-typewriter-mn", sans-serif;
-  border: 2px solid black; 
+  /* border: 2px solid black;  */
   box-sizing: border-box; 
   max-width: 700px; 
   margin: 4rem auto; 
+  overflow: visible;
+  margin-top: 11rem;
+}
+
+.contact-container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 197%;
+  height: 197%;
+  z-index: -1; /* ✅ ensures it's *behind* everything else */
+  pointer-events: none; /* allows clicks on form elements */
+}
+
+.contact-svg img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 
 .contact-page h1 {
   font-size: 3rem;
   margin-bottom: 3rem;
+  color: #ffffff;
 }
 
 #contact-form {
+  position: relative;
   max-width: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  z-index: 1;
 }
 
 #contact-form input,
@@ -518,7 +580,7 @@ font-family: "bulletin-typewriter-mn", sans-serif;
   padding: 3rem 10%;
   text-align: center;
   font-family: "bulletin-typewriter-mn", sans-serif;
-  margin-top: 3rem;
+  margin-top: 10rem;
 }
 
 .footer-content p {

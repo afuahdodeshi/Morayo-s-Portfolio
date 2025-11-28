@@ -270,41 +270,53 @@ font-family: "bulletin-typewriter-mn", sans-serif;
 /* about page */
 
 /* project page */
+/* --- FULL BACKGROUND SECTIONS --- */
+.projects{
+margin-top: 10rem;
+}
 .project-section {
-  height: 40vh; 
-  background-color: #000;
-  position: relative;
+  height: 140vh;
+  width: 70vh;
+  margin-left: 30rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 3rem;
   display: flex;
-  align-items: center; /* vertically centers the overlay */
-  justify-content: center; /* horizontally centers the overlay */
-  margin-top: 3rem; /* keeps spacing between sections */
-  /* REMOVE padding-top */
-  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 
 
-.project-section-overlay {
-  background: rgba(0,0,0,0.5); 
-  color: #fff;
-  text-align: center;
+.project-overlay h2 {
   font-family: "bulletin-typewriter-mn", sans-serif;
-  width: 80%;
-  max-width: 700px;
-  transition: background 0.3s ease;
-}
-
-.project-section-overlay h2 {
+  color: #fff;
   font-size: 3rem;
-  margin-bottom: 1rem;
 }
 
-.project-section-overlay p {
-  font-size: 1.2rem;
+.project-overlay a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.project-section:hover .project-section-overlay {
-  background: rgba(0,0,0,0.7);
+
+/* --- INDIVIDUAL BACKGROUND IMAGES --- */
+.editorial {
+  background-image: url("../images/ginga cover web.png");
+}
+
+.branding {
+  background-image: url("../images/de\ muze\ cover.jpg");
+}
+
+.photography {
+  background-image: url("../images/your-photo-image.png");
+}
+
+.posters {
+  background-image: url("../images/your-posters-image.png");
 }
 
 /* project page */

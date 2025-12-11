@@ -46,6 +46,15 @@ nav {
   gap: 30px;
 }
 
+.video-desktop {
+  display: block;
+}
+
+.video-mobile {
+  display: none;
+}
+
+
 /* Hamburger (mobile) - hidden by default, shown in mobile media query */
 
 /* active state animation */
@@ -297,7 +306,7 @@ font-family: "bulletin-typewriter-mn", sans-serif;
 /* --- FULL BACKGROUND SECTIONS --- */
 .projects{
 margin-top: 10rem;
-margin-left: 11rem;
+margin-left: 31rem;
 }
 .project-section {
   height: 140vh;
@@ -426,8 +435,8 @@ margin-left: 11rem;
 }
 
 .contact-container img{
-  width: 200%;
-  margin-left: -17rem;
+  width: 110%;
+  /* margin-left: -rem; */
 }
 
 /* --- Project Detail Page --- */ 

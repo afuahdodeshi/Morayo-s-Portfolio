@@ -1,11 +1,36 @@
 /* ======= MOBILE ======= */
-@media (max-width: 767px) {
+@media  (max-width: 767px) {
+
+
+.nav {
+  width: 100%;
+  background-color: #fff; /* change if you want transparent or colored nav */
+  padding: 5px 0px;
+  position: fixed; /* keeps it on top */
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
 
   /* Swap video on mobile */
-  #bckgimg video {
-    content: url("../video/Comp\ 1_12.mp4");
-    width: 100%;
-    margin: 0;
+#bckgimg video {
+   width: 110%;
+   margin: 15rem 5rem 5rem -1.5rem; /* pushes down nicely */
+   display: block;
+}
+  .video-desktop {
+    display: none !important;
+  }
+
+  .video-mobile {
+    display: block;
+  }
+
+
+
+  #bckgimg {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   /* Projects grid: 1 by 1 */
@@ -14,12 +39,13 @@
   }
 
   .projects-grid a{
-    width: 110%;
-    margin-bottom: -12rem;
+    width: 115%;
+    margin-bottom: -10rem;
   }
 
   /* Navbar adjustments */
   nav {
+    margin-bottom: 5rem;
     justify-content: space-between;
     gap: 0;
     padding: 10px 1rem;
@@ -82,44 +108,96 @@
     width: 100%;
     margin-left: 0.1vw;
   }
-
-  /* Footer tweaks */
-  .footer {
-    padding: 2rem 4%;
-    text-align: center;
-  }}
-
-  /* Projects listing layout - center and responsive sizing */
-
-    .projects{
-        grid-template-columns: repeat(1, 1fr);
-  }
+  */
 
   .projects a{
-    width: 90%;
-  /* margin-left: -4rem; */
-
-
+    width: 10%;
   }
 .projects {
-    margin-top: 6rem;
+    margin-top: 12rem;
+    width: 60%;
+    margin-left: revert-layer;
+    /* margin-top: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem; */
   }
 
 
   .project-section {
-    width: 100%;
+    width: 150%;
     max-width: 1000px;
     aspect-ratio: 16 / 9;
     height: auto;
     background-size: cover;
     background-position: center;
-    margin: 0; /* spacing controlled by .projects gap */
+    margin-left: 1rem;
+    /* margin: 0; */
+     /* spacing controlled by .projects gap */
   }
+
+  /* Footer tweaks */
+  .footer {
+    padding: 2rem 4%;
+    text-align: center;
+  }
+
+  .contact-container {
+    margin-top: 5rem;
+}
+
+/* .project-details{
+    margin-top: 5rem;
+} */
+
+.top-back-btn{
+    margin-top: 3rem;
+    /* margin-left: -2rem; */
+}
+.project-title h1{
+    font-size: 4rem ;
+    margin-top: 5rem;
+}
+.project-hero img{
+    width: 50%;
+}
+
+.ginga-description p{
+    font-size: 1rem ;
+
+}
+.project-description p{
+    font-size: 1rem ;
+
+}
+.de-muze-description p{
+    font-size: 1rem ;
+
+}
+
+.project-gallery{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-gallery img{
+    width: 100%;
+}
+
+.project-gallery-mockups{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-gallery-mockups img{
+    width: 100%;
+    margin-left: 0rem;
+}
+  /* Projects listing layout - center and responsive sizing */
+
+
 
   /* MOBILE HAMBURGER */
 @media (max-width: 600px) {
@@ -173,13 +251,13 @@
    width: 110%;
   }
 
-  .projects{
+     .projects{
         grid-template-columns: repeat(1, 1fr);
   }
 
   .projects a{
     width: 90%;
-  /* margin-left: -4rem; */
+  margin-left: -44rem;
 
 
   }
@@ -194,7 +272,7 @@
 
 
   .project-section {
-    width: 100%;
+    width: 150%;
     max-width: 1000px;
     aspect-ratio: 16 / 9;
     height: auto;
@@ -202,6 +280,8 @@
     background-position: center;
     margin: 0; /* spacing controlled by .projects gap */
   }
+
+
 
   /* Logo resize */
   .nav-logo img {
@@ -238,6 +318,42 @@
     margin-left: 0.1vw;
   }
 
+
+  .top-back-btn{
+    margin-top: 3rem;
+    /* margin-left: -2rem; */
+}
+.project-title h1{
+    font-size: 4rem ;
+    margin-top: 5rem;
+}
+.project-hero img{
+    width: 50%;
+}
+
+.ginga-description p{
+    font-size: 1rem ;
+
+}
+
+.project-gallery{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-gallery img{
+    width: 100%;
+}
+
+.project-gallery-mockups{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-gallery-mockups img{
+    width: 100%;
+}
+}
 /* ======= LIGHTBOX FOR PROJECT IMAGES ======= */
 .lightbox-overlay {
   position: fixed;

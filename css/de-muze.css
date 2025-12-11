@@ -1,0 +1,95 @@
+/* detailed page */
+/* --- Project Detail Page --- */
+
+/* TITLE BLOCK */
+.project-title {
+  margin-top: 12rem;
+  text-align: center;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+}
+
+.project-title h1 {
+  font-size: 5rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.3rem;
+}
+
+.project-title .subtitle {
+  font-size: 1.3rem;
+  color: #666;
+}
+
+/* CONTENT SAME */
+.project-details {
+  max-width: 1200px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  color: #000;
+}
+
+.project-split {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.project-hero {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-hero img {
+  height: auto;
+  width: 70%;
+  object-fit: contain;
+}
+
+.de-muze-description {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* GALLERY */
+
+.project-gallery-mockups {
+  margin-top: 6rem;
+}
+
+.project-gallery-mockups img {
+  width: 60%;
+  max-width: 1100px;
+  box-shadow: 0 0 0 1px #000;
+  align-items: center;
+  margin-left: 14rem;
+}
+
+/* QUOTE */
+.project-quote {
+  text-align: center;
+  margin-top: 6rem;
+  font-style: italic;
+  color: #333;
+  font-size: 1.2rem;
+  border-top: 1px solid #000;
+  padding-top: 2rem;
+}
+
+/* MOBILE STACK */
+@media (max-width: 900px) {
+  .project-split {
+    flex-direction: column;
+  }
+
+  .project-hero {
+    height: auto;
+  }
+
+  .project-hero img {
+    width: 100%;
+    height: auto;
+  }
+}

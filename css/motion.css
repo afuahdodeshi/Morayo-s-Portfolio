@@ -1,0 +1,32 @@
+.project-intro { margin-top: 12rem; }
+
+.project-details-motion { 
+    max-width: 900px;
+     margin: 6rem auto; 
+     padding: 0 2rem; 
+     font-family: "bulletin-typewriter-mn", sans-serif; 
+     color: #000; } 
+
+     .project-description-motion {
+         text-align: justify; 
+         font-size: 1.1rem; 
+         line-height: 1.8; 
+         margin-bottom: 5rem; } 
+
+     .project-video {
+         display: flex; 
+         flex-direction: row; 
+         gap: 3rem; 
+         align-items: center; } 
+
+     .project-video video 
+     { width: 100%; 
+        max-width: 800px; 
+        margin-left: 3rem;
+        margin-bottom: 5rem;
+        height: auto; display: block; 
+        box-shadow: 0 0 0 1px #000; /* thin black frame, like a printed border */ 
+    } 
+
+
+

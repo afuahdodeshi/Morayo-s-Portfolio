@@ -1,0 +1,48 @@
+/* --- GRID CONTAINER --- */
+.projects-grid {
+    margin-top: -10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* --- EACH PROJECT CARD --- */
+.project-card {
+  /* display: block; */
+  max-width: 150%;
+  height: 50vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* --- BACKGROUND IMAGES --- */
+.editorial {
+  background-image: url("../images/ginga\ cover\ web.png");
+}
+
+.branding {
+  background-image: url("../images/benne web cover.jpg");
+}
+
+.photography {
+  background-image: url("../images/de muze cover.jpg");
+}
+
+.posters {
+  background-image: url("../images/girls\ webcover.jpg");
+}
+
+.motion {
+  background-image: url("../images/motion-cover.jpg");
+}
+
+.personal-branding {
+  background-image: url("../images/personal-branding-cover.jpg");
+}
+
+/* OPTIONAL TITLE */
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 3rem;
+}

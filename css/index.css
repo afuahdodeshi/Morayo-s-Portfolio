@@ -1,0 +1,496 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.nav {
+  width: 100%;
+  background-color: #fff; /* change if you want transparent or colored nav */
+  padding: 10px 20px;
+  position: fixed; /* keeps it on top */
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+nav {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 25.9rem;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 8rem;
+  margin: 0;
+  float: none;
+  display: block;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: "your font", sans-serif; /* you can use your Typekit font here */
+  font-size: 1.5rem;
+  color: #000; /* change color */
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #777;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li{
+    cursor: pointer;   
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-family: "bulletin-typewriter-mn", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#coverimg{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+}
+
+#bckgimg{
+    color: black;
+}
+
+#bckgimg video{
+   width: 80%;
+   margin-left: 10rem;
+}
+
+
+/* --- Projects Section --- */
+
+.content{
+    margin-top: 5rem;
+}
+h2{
+font-family: "bulletin-typewriter-mn", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 4rem 8%;
+  justify-items: center;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+.project-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.project-img:hover img {
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  text-align: center;
+  padding: 1rem;
+}
+
+.project-img:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay p {
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* about */
+.about-me img{
+  width: 100%;
+  align-items: center;
+  align-items: center;
+}
+
+.about-me{
+  margin-bottom: -11rem;
+}
+
+/* keeps the two elements aligned and spaced */
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15rem; /* controls space between image and text */
+  flex-wrap: wrap;
+}
+
+/* boxy text container */
+.about-text {
+  max-width: 300px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify; /* <-- this is what makes the text look "boxy" */
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.about-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-left: 12rem;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 0.7rem 1.4rem;
+  text-decoration: none;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  border: 1.5px solid rgb(0, 0, 0);
+  transition: all 0.4s ease-in-out;
+}
+
+.about-btn:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* soft glow effect */
+}
+
+
+
+/* about page */
+.about-page {
+  margin-top: 5rem;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+}
+
+.about-page h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.about-page-container {
+  display: flex;
+  gap: 8rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about-photo-page {
+  width: 300px;
+  height: 360px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about-text-page {
+  max-width: 600px;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* about page */
+
+/* project page */
+/* --- FULL BACKGROUND SECTIONS --- */
+.projects{
+margin-top: 10rem;
+}
+.project-section {
+  height: 140vh;
+  width: 70vh;
+  margin-left: 33rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.project-overlay h2 {
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.project-overlay a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/* --- INDIVIDUAL BACKGROUND IMAGES --- */
+.editorial {
+  background-image: url("../images/ginga cover web.png");
+}
+
+.branding {
+  background-image: url("../images/benne\ web\ cover.jpg");
+}
+
+.photography {
+  background-image: url("../images/de\ muze\ cover.jpg");
+}
+
+.posters {
+  background-image: url("../images/girls\ webcover.jpg");
+}
+
+.motion {
+  background-image: url("../images/motion-cover.jpg");
+}
+.morayo {
+  background-image: url("../images/personal-branding-cover.jpg");
+}
+
+/* project page */
+
+
+/* editorial page */
+.project-section {
+  height: 40vh; 
+  background-color: #000;
+  position: relative;
+  display: flex;
+  align-items: center; /* vertically centers the overlay */
+  justify-content: center; /* horizontally centers the overlay */
+  margin-top: 3rem; /* keeps spacing between sections */
+  /* REMOVE padding-top */
+  box-sizing: border-box;
+}
+
+
+
+.project-section-overlay {
+  background: rgba(0,0,0,0.5); 
+  color: #fff;
+  text-align: center;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  width: 80%;
+  max-width: 700px;
+  transition: background 0.3s ease;
+}
+
+.project-section-overlay h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.project-section-overlay p {
+  font-size: 1.2rem;
+}
+
+.project-section-overlay a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.project-section:hover .project-section-overlay {
+  background: rgba(0,0,0,0.7);
+}
+ .project-img a{
+  text-decoration: none;
+  color: #fff;
+ }
+
+
+
+/* editorial page */
+
+/* contact page */
+.contact-page {
+    position: relative;
+  max-width: 700px;
+  padding: 3rem 5%; /* slightly reduced so border isn’t too cramped */
+  text-align: center;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  /* border: 2px solid black;  */
+  box-sizing: border-box; 
+  max-width: 700px; 
+  margin: 4rem auto; 
+  overflow: visible;
+  margin-top: 11rem;
+}
+
+.contact-container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-container img{
+  width: 200%;
+  margin-left: -17rem;
+}
+
+/* --- Project Detail Page --- */ 
+.project-intro { margin-top: 12rem; 
+  /* clears fixed navbar */ text-align: center;
+   color: #000; font-family: "bulletin-typewriter-mn", sans-serif; } 
+   .project-intro h1 { font-size: 4rem; letter-spacing: 2px; margin-bottom: 0.5rem; }
+    .project-intro .subtitle { font-size: 1.2rem; color: #555; letter-spacing: 1px; }
+     .project-details { max-width: 900px; margin: 6rem auto; padding: 0 2rem; font-family: "bulletin-typewriter-mn", sans-serif; color: #000; } 
+     .project-description { text-align: justify; font-size: 1.1rem; line-height: 1.8; margin-bottom: 5rem; } 
+     .project-images { display: flex; flex-direction: column; gap: 3rem; align-items: center; } 
+     .project-images img { width: 100%; max-width: 800px; height: auto; display: block; box-shadow: 0 0 0 1px #000; /* thin black frame, like a printed border */ } 
+     .project-quote { text-align: center; margin-top: 6rem; font-style: italic; color: #333; letter-spacing: 0.5px; font-size: 1.2rem; border-top: 1px solid #000; padding-top: 2rem; } 
+     /* make it feel book-like on larger screens */ 
+     @media (min-width: 1024px) 
+     { .project-description { columns: 2; column-gap: 3rem; } }
+      /* detailed page */
+
+
+/* contact page *
+
+
+
+
+
+/* detailed page */
+
+/* backbutton */
+.back-btn-container {
+  text-align: center;
+  margin: 6rem 0 4rem 0;
+}
+
+.back-btn {
+  background: #fff;
+  color: #000;
+  border: 1.5px solid #000;
+  padding: 0.8rem 2rem;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0; /* keep it sharp */
+}
+
+.back-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* backbutton */
+
+/* backbutton2 */
+.top-back-btn {
+  position: absolute;
+  top: 10rem; /* adjust based on navbar height */
+  left: 5%;
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  transition: color 0.3s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.top-back-btn:hover {
+  color: #555;
+  transform: translateX(-4px); /* subtle nudge on hover */
+}
+
+/* backbutton2 */
+
+/* --- Footer --- */
+.footer {
+  background-color: #000; /* black background */
+  color: #fff; /* white text */
+  padding: 3rem 10%;
+  text-align: center;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  margin-top: 10rem;
+}
+
+.footer-content p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #999; /* subtle hover effect */
+}

@@ -3,6 +3,8 @@
     padding: 0%;
 }
 
+
+
 .nav {
   width: 100%;
   background-color: #fff; /* change if you want transparent or colored nav */
@@ -77,7 +79,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  font-family: "your font", sans-serif; /* you can use your Typekit font here */
+  font-family: "bulletin-typewriter-mn", sans-serif; /* you can use your Typekit font here */
   font-size: 1.5rem;
   color: #000; /* change color */
   transition: color 0.3s ease;
@@ -103,6 +105,7 @@ nav {
     color: black;
     font-family: "bulletin-typewriter-mn", sans-serif;
     font-weight: 400;
+    font-size: 2rem;
     font-style: normal;
 }
 
@@ -131,9 +134,9 @@ nav {
     margin-top: 5rem;
 }
 h2{
-font-family: "bulletin-typewriter-mn", sans-serif;
+   font-family: "bulletin-typewriter-mn", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-size: 2rem;
     text-align: center;
     font-size: 2.5rem;
 }
@@ -190,15 +193,17 @@ font-family: "bulletin-typewriter-mn", sans-serif;
   opacity: 1;
 }
 
-.overlay h3 {
+.overlay h3 { 
   font-family: "bulletin-typewriter-mn", sans-serif;
-  font-weight: 600;
+    font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
 .overlay p {
-  font-family: Arial, sans-serif;
+   font-family: "bulletin-typewriter-mn", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
   font-size: 0.95rem;
   opacity: 0.9;
 }
@@ -230,8 +235,8 @@ font-family: "bulletin-typewriter-mn", sans-serif;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  font-family: "bulletin-typewriter-mn", sans-serif;
-  font-size: 1.1rem;
+   font-family: "bulletin-typewriter-mn", sans-serif;
+    font-size: 2rem;
   line-height: 1.7;
   text-align: justify; /* <-- this is what makes the text look "boxy" */
 }
@@ -418,25 +423,95 @@ margin-left: 31rem;
 .contact-page {
     position: relative;
   max-width: 700px;
-  padding: 3rem 5%; /* slightly reduced so border isn’t too cramped */
+  padding: 3rem 5%; /* slightly reduced so border isn't too cramped */
   text-align: center;
   font-family: "bulletin-typewriter-mn", sans-serif;
   /* border: 2px solid black;  */
-  box-sizing: border-box; 
+  box-sizing: border-box;
   max-width: 700px; 
   margin: 4rem auto; 
   overflow: visible;
   margin-top: 11rem;
 }
 
+/* Position links ON TOP of the receipt */
 .contact-container {
   position: relative;
-  z-index: 1;
+  width: 100%;
+  max-width: 420px; /* match the image width */
+  margin: 0 auto;
 }
 
-.contact-container img{
-  width: 110%;
-  /* margin-left: -rem; */
+/* Layer that holds all your link text */
+.links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: auto; /* links stay clickable */
+}
+
+/* Each link positioned individually */
+.contact-item {
+  position: absolute;
+  font-family: "bulletin-typewriter-mn", sans-serif;
+  font-size: 1.15rem;
+  color: black;
+}
+
+.links a{
+  color: black;
+}
+
+/* ===== POSITION EACH ONE USING TOP + LEFT ===== */
+.email {
+  top: 285px;  /* adjust until it lines up with "Email ...." */
+  left: 195px;
+}
+
+.behance {
+  top: 329px;
+  left: 250px;
+}
+
+.linkedin {
+  top: 379px;
+  left: 255px;
+}
+
+.cv {
+  top: 428px;
+  left: 280px;
+}
+
+
+
+
+
+
+.contact-text-overlay-mail a {
+  font-size: 1.2rem;
+  margin-left: 4rem;
+  text-decoration: none;
+  color: black;
+}
+.contact-text-overlay-behance a {
+  font-size: 1.2rem;
+  margin-left: 4rem;
+  text-decoration: none;
+  color: black;
+}
+.contact-text-overlay-linkedin a {
+  font-size: 1.2rem;
+  margin-left: 4rem;
+  text-decoration: none;
+  color: black;
+}
+.contact-text-overlay-cv a {
+  font-size: 1.2rem;
+  margin-left: 4rem;
+  text-decoration: none;
+  color: black;
 }
 
 /* --- Project Detail Page --- */ 
@@ -578,3 +653,4 @@ margin-left: 31rem;
   box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 .lightbox-close:focus { outline: 2px solid #fff; }
+

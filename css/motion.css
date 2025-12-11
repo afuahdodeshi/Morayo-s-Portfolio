@@ -22,11 +22,12 @@
      .project-video video 
      { width: 100%; 
         max-width: 800px; 
-        margin-left: 3rem;
+        margin-left: 2rem;
         margin-bottom: 5rem;
         height: auto; display: block; 
         box-shadow: 0 0 0 1px #000; /* thin black frame, like a printed border */ 
     } 
+
 
 
 

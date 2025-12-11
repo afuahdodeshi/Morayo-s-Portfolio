@@ -36,6 +36,7 @@
   /* Projects grid: 1 by 1 */
   .projects-grid {
     grid-template-columns: 1fr;
+    align-items: center;
   }
 
   .projects-grid a{
@@ -138,6 +139,22 @@
      /* spacing controlled by .projects gap */
   }
 
+   .project-video {
+         display: flex; 
+         flex-direction: column; 
+         gap: 3rem; 
+         align-items: center; 
+         margin-left: -2rem;
+        } 
+
+     .project-video video 
+     { width: 100%; 
+        max-width: 800px; 
+        margin-left: 2rem;
+        margin-bottom: 5rem;
+        height: auto; display: block; 
+        box-shadow: 0 0 0 1px #000; /* thin black frame, like a printed border */ 
+    } 
   /* Footer tweaks */
   .footer {
     padding: 2rem 4%;
@@ -195,6 +212,48 @@
     width: 100%;
     margin-left: 0rem;
 }
+
+/* ------- MOBILE CONTACT PAGE FIX ------- */
+
+.contact-container {
+    max-width: 300px; /* iPhone SE width */
+    margin: 0 auto;
+}
+
+.contact-container img {
+    width: 100%;
+}
+
+/* Re-position each link for small screens */
+.contact-item {
+    font-size: 0.85rem; /* smaller text so it fits */
+}
+
+/* NEW mobile coordinates */
+.email {
+    top: 102px;
+    left: 130px;
+    font-size: 0.8rem;
+}
+
+.behance {
+    top: 133px;
+    left: 173px;
+    font-size: 0.8rem;
+}
+
+.linkedin {
+    top: 162px;
+    left: 175px;
+    font-size: 0.8rem;
+}
+
+.cv {
+    top: 195px;
+    left: 195px;
+    font-size: 0.8rem;
+}
+
   /* Projects listing layout - center and responsive sizing */
 
 
@@ -353,6 +412,23 @@
 .project-gallery-mockups img{
     width: 100%;
 }
+
+   .project-video {
+         display: flex; 
+         flex-direction: column; 
+         gap: 3rem; 
+         align-items: center; 
+         margin-left: -2rem;
+        } 
+
+     .project-video video 
+     { width: 100%; 
+        max-width: 800px; 
+        margin-left: 2rem;
+        margin-bottom: 5rem;
+        height: auto; display: block; 
+        box-shadow: 0 0 0 1px #000; /* thin black frame, like a printed border */ 
+    } 
 }
 /* ======= LIGHTBOX FOR PROJECT IMAGES ======= */
 .lightbox-overlay {
@@ -404,3 +480,4 @@
   display: flex;
   flex-direction: column;
 }
+

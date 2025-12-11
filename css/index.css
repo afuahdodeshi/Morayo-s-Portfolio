@@ -415,6 +415,35 @@ margin-left: 31rem;
   color: #fff;
  }
 
+/* Lightbox overlay */
+#lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 9999;
+}
+
+#lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  object-fit: contain;
+}
+
+#lightbox-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
 
 
 /* editorial page */

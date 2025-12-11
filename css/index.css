@@ -35,6 +35,37 @@ nav {
   padding: 0;
 }
 
+/* Center nav links only (keep logo in its place) */
+.nav nav{ position: relative; }
+.nav .nav-links{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 30px;
+}
+
+/* Hamburger (mobile) - hidden by default, shown in mobile media query */
+
+/* active state animation */
+.hamburger.active div:nth-child(1){ transform: translateY(5px) rotate(45deg); }
+.hamburger.active div:nth-child(2){ opacity: 0; }
+.hamburger.active div:nth-child(3){ transform: translateY(-5px) rotate(-45deg); }
+
+@media (max-width:767px){
+  /* show hamburger, hide centered links and use mobile panel */
+  .hamburger{display:inline-flex; z-index: 40}
+  /* make the menu sit just below the hamburger and align to the right edge */
+  .nav .nav-links{position:absolute; display:none; top:calc(100% + 8px); right:1rem; background:#fff; width:220px; flex-direction:column; padding:0.5rem 1rem; box-shadow:0 6px 20px rgba(0,0,0,0.08); border-radius:6px;}
+  .nav .nav-links.active{display:flex}
+  .nav .nav-links a{padding:0.5rem 0}
+  /* ensure logo stays left and hamburger right */
+  .nav nav{justify-content:space-between; gap: 0}
+  .nav .nav-logo{order:0}
+  .hamburger{order:1}
+}
+
 .nav-links a {
   text-decoration: none;
   font-family: "your font", sans-serif; /* you can use your Typekit font here */
@@ -266,11 +297,12 @@ font-family: "bulletin-typewriter-mn", sans-serif;
 /* --- FULL BACKGROUND SECTIONS --- */
 .projects{
 margin-top: 10rem;
+margin-left: 11rem;
 }
 .project-section {
   height: 140vh;
   width: 70vh;
-  margin-left: 33rem;
+  /* margin-left: 33rem; */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

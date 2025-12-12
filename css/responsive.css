@@ -144,9 +144,8 @@
       top: 273px;
       left: 195px;
   }
-  }
 
-  .projects a{
+   .projects a{
     width: 10%;
   }
 .projects {
@@ -160,36 +159,11 @@
     gap: 1.5rem;
     padding: 2rem 1rem; */
   }
-
-
-  .project-section {
-    width: 150%;
-    max-width: 1000px;
-    aspect-ratio: 16 / 9;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    margin-left: 1rem;
-    /* margin: 0; */
-     /* spacing controlled by .projects gap */
   }
 
-   .project-video {
-         display: flex; 
-         flex-direction: column; 
-         gap: 3rem; 
-         align-items: center; 
-         margin-left: -2rem;
-        } 
+ 
 
-     .project-video video 
-     { width: 100%; 
-        max-width: 800px; 
-        margin-left: 2rem;
-        margin-bottom: 5rem;
-        height: auto; display: block; 
-        box-shadow: 0 0 0 1px #000; /* thin black frame, like a printed border */ 
-    } 
+
   /* Footer tweaks */
   .footer {
     padding: 2rem 4%;

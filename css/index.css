@@ -474,7 +474,7 @@ margin-left: 31rem;
 /* Layer that holds all your link text */
 .links {
   position: absolute;
-  top: 0;
+  top: 14.5%;
   left: 0;
   width: 100%;
   pointer-events: auto; /* links stay clickable */
@@ -494,22 +494,22 @@ margin-left: 31rem;
 
 /* ===== POSITION EACH ONE USING TOP + LEFT ===== */
 .email {
-  top: 285px;  /* adjust until it lines up with "Email ...." */
-  left: 195px;
+  top: 160px;  /* adjust until it lines up with "Email ...." */
+  left: 185px;
 }
 
 .behance {
-  top: 329px;
-  left: 250px;
+  top: 200px;
+  left: 240px;
 }
 
 .linkedin {
-  top: 379px;
-  left: 255px;
+  top: 240px;
+  left: 245px;
 }
 
 .cv {
-  top: 428px;
+  top: 286px;
   left: 280px;
 }
 

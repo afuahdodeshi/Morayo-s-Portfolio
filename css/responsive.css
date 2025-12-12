@@ -110,6 +110,40 @@
     width: 100%;
     margin-left: 0.1vw;
   }
+    .contact-container {
+      max-width: 300px; /* iPhone SE width */
+      margin: 0 auto;
+  }
+
+  .contact-container img {
+      width: 100%;
+  }
+
+  /* Re-position each link for small screens */
+  .contact-item {
+      font-size: 0.8rem; /* smaller text so it fits */
+  }
+
+  /* NEW mobile coordinates */
+  .email {
+      top: 182px;
+      left: 130px;
+  }
+
+  .behance {
+      top: 210px;
+      left: 173px;
+  }
+
+  .linkedin {
+      top: 243px;
+      left: 175px;
+  }
+
+  .cv {
+      top: 273px;
+      left: 195px;
+  }
   }
 
   .projects a{
@@ -215,46 +249,6 @@
 }
 
 /* ------- MOBILE CONTACT PAGE FIX ------- */
-
-.contact-container {
-    max-width: 300px; /* iPhone SE width */
-    margin: 0 auto;
-}
-
-.contact-container img {
-    width: 100%;
-}
-
-/* Re-position each link for small screens */
-.contact-item {
-    font-size: 0.85rem; /* smaller text so it fits */
-}
-
-/* NEW mobile coordinates */
-.email {
-    top: 102px;
-    left: 130px;
-    font-size: 0.8rem;
-}
-
-.behance {
-    top: 133px;
-    left: 173px;
-    font-size: 0.8rem;
-}
-
-.linkedin {
-    top: 162px;
-    left: 175px;
-    font-size: 0.8rem;
-}
-
-.cv {
-    top: 195px;
-    left: 195px;
-    font-size: 0.8rem;
-}
-
   /* Projects listing layout - center and responsive sizing */
 
 

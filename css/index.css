@@ -3,6 +3,11 @@
     padding: 0%;
 }
 
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 
 
 .nav {
@@ -641,10 +646,12 @@ margin-left: 31rem;
 .footer {
   background-color: #000; /* black background */
   color: #fff; /* white text */
-  padding: 3rem 10%;
+  padding: 3rem 5%;
   text-align: center;
   font-family: "bulletin-typewriter-mn", sans-serif;
   margin-top: 10rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .footer-content p {

@@ -16,9 +16,10 @@
 
   /* Swap video on mobile */
 #bckgimg video {
-   width: 110%;
-   margin: 15rem 5rem 5rem -1.5rem; /* pushes down nicely */
-   display: block;
+  width: 100%;
+  margin: 15rem 0 5rem 0; /* keep spacing without overflow */
+  display: block;
+  max-width: 100%;
 }
   .video-desktop {
     display: none !important;
@@ -43,9 +44,10 @@
   }
 
   .projects-grid a{
-    width: 115%;
-    margin-bottom: -9rem;
+    width: 100%;
+    margin-bottom: -10rem;
     align-items: center;
+    margin-left: 1rem;
   }
 
   /* Navbar adjustments */
@@ -148,40 +150,40 @@
       left: 140px;
   }
 .projects {
-    margin-top: 12rem;
-    width: 60%;
-    margin-left: revert-layer;
+  margin-top: 12rem;
+  width: 100%;
+  margin-left: 0;
+  padding: 0 1rem;
   }
 
 
   .project-section {
-    width: 150%;
-    max-width: 1000px;
-    aspect-ratio: 16 / 9;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    margin-left: 1rem;
-    /* margin: 0; */
-     /* spacing controlled by .projects gap */
+     width: 100%;
+     max-width: 100%;
+     aspect-ratio: 16 / 9;
+     height: auto;
+     background-size: cover;
+     background-position: center;
+     margin-left: 0;
+      /* spacing controlled by .projects gap */
   }
 
    .project-video {
-         display: flex; 
-         flex-direction: column; 
-         gap: 3rem; 
-         align-items: center; 
-         margin-left: -2rem;
-        } 
+     display: flex; 
+     flex-direction: column; 
+     gap: 3rem; 
+     align-items: center; 
+     margin-left: 0;
+    } 
 
      .project-video video 
      { width: 100%; 
-        max-width: 800px; 
-        margin-left: 2rem;
-        margin-bottom: 5rem;
-        height: auto; display: block; 
-        box-shadow: 0 0 0 1px #000; /* thin black frame, like a printed border */ 
-    } 
+      max-width: 800px; 
+      margin-left: 0;
+      margin-bottom: 5rem;
+      height: auto; display: block; 
+      box-shadow: 0 0 0 1px #000; /* thin black frame, like a printed border */ 
+    }
 
     .click-text {
   position: absolute;

@@ -44,10 +44,9 @@
   }
 
   .projects-grid a{
-    width: 100%;
+    width: 110%;
     margin-bottom: -10rem;
     align-items: center;
-    margin-left: 1rem;
   }
 
   /* Navbar adjustments */

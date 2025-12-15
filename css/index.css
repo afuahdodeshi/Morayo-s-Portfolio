@@ -305,6 +305,30 @@ h2{
   line-height: 1.7;
 }
 
+
+.click {
+  position: relative; /* necessary for absolute positioning inside */
+
+}
+
+.about-me-img {
+  width: 100%;
+  display: block;
+}
+
+.click-text {
+  position: absolute;
+  top: 55%; /* vertically center */
+  left: 35%; /* horizontally center */
+  transform: translate(-50%, -50%); /* perfect centering */
+  color: rgb(0, 0, 0); /* or whatever contrasts the image */
+  font-size: 64px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* optional rounded edges */
+}
+
 /* about page */
 
 /* project page */
@@ -510,7 +534,7 @@ margin-left: 31rem;
 
 .cv {
   top: 286px;
-  left: 280px;
+  left: 195px;
 }
 
 

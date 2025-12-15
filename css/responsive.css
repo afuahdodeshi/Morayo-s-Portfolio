@@ -142,7 +142,7 @@
 
   .cv {
       top: 273px;
-      left: 195px;
+      left: 140px;
   }
     .projects a{
     width: 10%;
@@ -188,6 +188,20 @@
         height: auto; display: block; 
         box-shadow: 0 0 0 1px #000; /* thin black frame, like a printed border */ 
     } 
+
+    .click-text {
+  position: absolute;
+  top: 55%; /* vertically center */
+  left: 35%; /* horizontally center */
+  transform: translate(-50%, -50%); /* perfect centering */
+  color: rgb(0, 0, 0); /* or whatever contrasts the image */
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* optional rounded edges */
+}
+
   }
 
 
@@ -379,6 +393,20 @@
 
   .nav-logo { order: 0; margin-right: 0; }
   .nav-logo img { height: 7rem; }
+
+      .click-text {
+  position: absolute;
+  top: 55%; /* vertically center */
+  left: 34%; /* horizontally center */
+  transform: translate(-50%, -50%); /* perfect centering */
+  color: rgb(0, 0, 0); /* or whatever contrasts the image */
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* optional rounded edges */
+}
+
 
 }
 

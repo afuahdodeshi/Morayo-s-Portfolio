@@ -1,60 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="https://use.typekit.net/azm0lzw.css">
-  <title>Ayoka's World</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="svg/morayo-logo.svg">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="https://use.typekit.net/azm0lzw.css">
+    <title>Ayoka</title>
 
 <body>
-    <!-- Back arrow at top -->
-<div class="top-back-btn" onclick="goBack()">&larr;</div>
-
-  <section class="nav">
-    <nav>
-      <div class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </section>
+  <div class="top-back-btn" onclick="goBack()">&larr;</div>
+<section class="nav">
+  <nav>
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="svg/morayo-logo.svg" alt="Morayo logo">
+      </a>
+    </div>
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</section>
 
   <!-- Project Intro -->
 
   <section class="project-intro">
-    <h1>AFRO JAZZ</h1>
-    <p class="subtitle">Editorial</p>
+    <h1>AYOKA</h1>
+    <p class="subtitle">Branding</p>
   </section>
 
   <!-- Main Project Content -->
   <section class="project-details">
     <div class="project-description">
       <p>
-        <strong>Ayoka's World</strong> is a visual exploration that merges African rhythm with modern minimalism.
-        This project reimagines the texture and tone of traditional jazz visuals through a contemporary lens �
-        celebrating improvisation, texture, and the elegance of black and white space.
+
+       <strong>Ayoka</strong> for a skincare lifestyle brand, 
+centered around packaging. The goal of this project was to 
+embody the different layers in skincare and how important they were in one’s lifestyle.
+
+When creating the logo and packaging for the brand I thought back to nature and what best represents layers perfectly, I thought through onions, artichokes and the lotus flower but they just didn’t embody our vision well. Hence the creation of the cabbage illustration, this vegetable perfectly represented the many layers to skincare in lifestyle.
+
+In packaging, we incoporated these layers in a balanced matter, having the layers become a pattern of it’s own and sort of the foundation to which each product is designed around it, 
+letting the layers breathe differently depending on the format, 
+while keeping the brand feeling unified.
       </p>
-    </div>
+      </div>
 
     <div class="project-images">
-      <!-- <img src="images/afrojazz-cover.jpg" alt="Afro Jazz Cover"> -->
-      <img src="images/ayoka1.jpg" alt="Afro Jazz Spread">
-      <img src="images/ayoka2.jpg" alt="Afro Jazz Spread">
-      <img src="images/ayoka3.jpg" alt="Afro Jazz Spread">
-      <img src="images/ayoka4.jpg" alt="Afro Jazz Spread">
+      <img src="images/ayoka branding.jpg" alt="GINGA Cover">
+      <img src="images/ayoka branding2.jpg" alt="GINGA Cover">
+      <img src="images/ayoka branding3.jpg" alt="GINGA Cover">
+      <img src="images/ayoka branding4.jpg" alt="GINGA Cover">
+      <img src="images/ayoka branding5.jpg" alt="GINGA Cover">
+      <img src="images/ayoka branding6.jpg" alt="GINGA Cover">
+      <img src="images/ayoka branding7.jpg" alt="GINGA Cover">
+      <img src="images/ayoka branding8.jpg" alt="GINGA Cover">
+      <img src="images/ayoka branding9.jpg" alt="GINGA Cover">
+      <img src="images/ayoka branding10.jpg" alt="GINGA Cover">
+      <img src="images/ayoka branding11.jpg" alt="GINGA Cover">
+      <img src="images/ayoka branding12.jpg" alt="GINGA Cover">
+      <img src="images/ayoka branding13.jpg" alt="GINGA Cover">
     </div>
 
     <div class="project-quote">
-      <p>"Design is the silent rhythm between image, text, and white space."</p>
-    </div>
+      <p>"A Skincare Lifestyle Brand"
   </section>
   
     <div class="back-btn-container">
@@ -63,7 +82,7 @@
 
   <section class="footer">
     <div class="footer-content">
-      <p>Design & Developed by Morayo Alimi.&nbsp;&nbsp;</p>
+      <p>Designed & Developed by Morayo Alimi.&nbsp;&nbsp;</p>
       <p>&copy; 2025 Morayo Alimi. All rights reserved.</p>
       <div class="footer-links">
         <a href="mailto:morayo.alimi@icloud.com">Email</a>
@@ -74,8 +93,13 @@
   </section>
   <script src="js/back.js"></script>
   <script src="js/hamburger.js"></script>
+  <!-- Lightbox -->
+<div id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="">
+</div>
+    <script src="js/bigger.js"></script>
         </body>
-</html>
+    </html>
 
 
 

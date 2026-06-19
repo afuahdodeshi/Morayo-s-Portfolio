@@ -372,7 +372,7 @@ margin-left: 31rem;
 
 /* --- INDIVIDUAL BACKGROUND IMAGES --- */
 .editorial {
-  background-image: url("../images/benne\ web\ cover.jpg");
+  background-image: url("../images/benne-web-cover.jpg");
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -386,21 +386,21 @@ margin-left: 31rem;
 }
 
 .photography {
-  background-image: url("../images/ginga\ cover\ web.png");
+  background-image: url("../images/ginga-cover-web.png");
   height: 300px;
   background-size: cover;
   background-position: center;
 }
 
 .posters {
-  background-image: url("../images/de\ muze\ cover.jpg");
+  background-image: url("../images/de-muze-cover.jpg");
   height: 300px;
   background-size: cover;
   background-position: center;
 }
 
 .motion {
-  background-image: url("../images/girls\ webcover.jpg");
+  background-image: url("../images/girls-webcover.jpg");
   height: 300px;
   background-size: cover;
   background-position: center;
